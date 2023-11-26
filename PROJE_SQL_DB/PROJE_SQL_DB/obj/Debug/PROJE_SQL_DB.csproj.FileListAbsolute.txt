@@ -1,0 +1,11 @@
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\bin\Debug\PROJE_SQL_DB.exe.config
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\bin\Debug\PROJE_SQL_DB.exe
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\bin\Debug\PROJE_SQL_DB.pdb
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.csproj.AssemblyReference.cache
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.Form1.resources
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.Properties.Resources.resources
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.csproj.GenerateResource.cache
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.csproj.CoreCompileInputs.cache
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.exe
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.pdb
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.frmCategories.resources
