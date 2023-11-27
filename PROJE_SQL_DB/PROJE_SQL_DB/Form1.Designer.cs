@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_settings = new System.Windows.Forms.Button();
-            this.btn_process = new System.Windows.Forms.Button();
-            this.btn_users = new System.Windows.Forms.Button();
-            this.btn_stats = new System.Windows.Forms.Button();
-            this.btn_case = new System.Windows.Forms.Button();
-            this.btn_personal = new System.Windows.Forms.Button();
-            this.btn_categories = new System.Windows.Forms.Button();
-            this.btn_customers = new System.Windows.Forms.Button();
-            this.btn_products = new System.Windows.Forms.Button();
-            this.btn_exit = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_products = new System.Windows.Forms.Button();
+            this.btn_customers = new System.Windows.Forms.Button();
+            this.btn_categories = new System.Windows.Forms.Button();
+            this.btn_personal = new System.Windows.Forms.Button();
+            this.btn_case = new System.Windows.Forms.Button();
+            this.btn_stats = new System.Windows.Forms.Button();
+            this.btn_users = new System.Windows.Forms.Button();
+            this.btn_process = new System.Windows.Forms.Button();
+            this.btn_settings = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -97,59 +97,53 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // btn_settings
+            // label2
             // 
-            this.btn_settings.Location = new System.Drawing.Point(58, 469);
-            this.btn_settings.Name = "btn_settings";
-            this.btn_settings.Size = new System.Drawing.Size(223, 37);
-            this.btn_settings.TabIndex = 4;
-            this.btn_settings.Text = "Ayarlar";
-            this.btn_settings.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(214, 32);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "SQL Veri Kayıt";
             // 
-            // btn_process
+            // label1
             // 
-            this.btn_process.Location = new System.Drawing.Point(58, 419);
-            this.btn_process.Name = "btn_process";
-            this.btn_process.Size = new System.Drawing.Size(223, 44);
-            this.btn_process.TabIndex = 6;
-            this.btn_process.Text = "İşlemler - Hareketler";
-            this.btn_process.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(287, 25);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "_________________________";
             // 
-            // btn_users
+            // btn_exit
             // 
-            this.btn_users.Location = new System.Drawing.Point(58, 361);
-            this.btn_users.Name = "btn_users";
-            this.btn_users.Size = new System.Drawing.Size(223, 52);
-            this.btn_users.TabIndex = 8;
-            this.btn_users.Text = "Şifre ve Kullanıcılar";
-            this.btn_users.UseVisualStyleBackColor = true;
+            this.btn_exit.Location = new System.Drawing.Point(58, 512);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(223, 40);
+            this.btn_exit.TabIndex = 6;
+            this.btn_exit.Text = "Çıkış";
+            this.btn_exit.UseVisualStyleBackColor = true;
             // 
-            // btn_stats
+            // btn_products
             // 
-            this.btn_stats.Location = new System.Drawing.Point(58, 313);
-            this.btn_stats.Name = "btn_stats";
-            this.btn_stats.Size = new System.Drawing.Size(223, 42);
-            this.btn_stats.TabIndex = 10;
-            this.btn_stats.Text = "İstatistikler";
-            this.btn_stats.UseVisualStyleBackColor = true;
+            this.btn_products.Location = new System.Drawing.Point(58, 97);
+            this.btn_products.Name = "btn_products";
+            this.btn_products.Size = new System.Drawing.Size(223, 40);
+            this.btn_products.TabIndex = 20;
+            this.btn_products.Text = "Ürünler";
+            this.btn_products.UseVisualStyleBackColor = true;
             // 
-            // btn_case
+            // btn_customers
             // 
-            this.btn_case.Location = new System.Drawing.Point(58, 272);
-            this.btn_case.Name = "btn_case";
-            this.btn_case.Size = new System.Drawing.Size(223, 35);
-            this.btn_case.TabIndex = 12;
-            this.btn_case.Text = "Kasa";
-            this.btn_case.UseVisualStyleBackColor = true;
-            // 
-            // btn_personal
-            // 
-            this.btn_personal.Location = new System.Drawing.Point(58, 229);
-            this.btn_personal.Name = "btn_personal";
-            this.btn_personal.Size = new System.Drawing.Size(223, 37);
-            this.btn_personal.TabIndex = 14;
-            this.btn_personal.Text = "Personel";
-            this.btn_personal.UseVisualStyleBackColor = true;
+            this.btn_customers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_customers.Location = new System.Drawing.Point(58, 143);
+            this.btn_customers.Name = "btn_customers";
+            this.btn_customers.Size = new System.Drawing.Size(223, 35);
+            this.btn_customers.TabIndex = 18;
+            this.btn_customers.Text = "Müşteriler";
+            this.btn_customers.UseVisualStyleBackColor = true;
+            this.btn_customers.Click += new System.EventHandler(this.btn_customers_Click);
             // 
             // btn_categories
             // 
@@ -161,51 +155,59 @@
             this.btn_categories.UseVisualStyleBackColor = true;
             this.btn_categories.Click += new System.EventHandler(this.btn_categories_Click);
             // 
-            // btn_customers
+            // btn_personal
             // 
-            this.btn_customers.Location = new System.Drawing.Point(58, 143);
-            this.btn_customers.Name = "btn_customers";
-            this.btn_customers.Size = new System.Drawing.Size(223, 35);
-            this.btn_customers.TabIndex = 18;
-            this.btn_customers.Text = "Müşteriler";
-            this.btn_customers.UseVisualStyleBackColor = true;
+            this.btn_personal.Location = new System.Drawing.Point(58, 229);
+            this.btn_personal.Name = "btn_personal";
+            this.btn_personal.Size = new System.Drawing.Size(223, 37);
+            this.btn_personal.TabIndex = 14;
+            this.btn_personal.Text = "Personel";
+            this.btn_personal.UseVisualStyleBackColor = true;
             // 
-            // btn_products
+            // btn_case
             // 
-            this.btn_products.Location = new System.Drawing.Point(58, 97);
-            this.btn_products.Name = "btn_products";
-            this.btn_products.Size = new System.Drawing.Size(223, 40);
-            this.btn_products.TabIndex = 20;
-            this.btn_products.Text = "Ürünler";
-            this.btn_products.UseVisualStyleBackColor = true;
+            this.btn_case.Location = new System.Drawing.Point(58, 272);
+            this.btn_case.Name = "btn_case";
+            this.btn_case.Size = new System.Drawing.Size(223, 35);
+            this.btn_case.TabIndex = 12;
+            this.btn_case.Text = "Kasa";
+            this.btn_case.UseVisualStyleBackColor = true;
             // 
-            // btn_exit
+            // btn_stats
             // 
-            this.btn_exit.Location = new System.Drawing.Point(58, 512);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(223, 40);
-            this.btn_exit.TabIndex = 6;
-            this.btn_exit.Text = "Çıkış";
-            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_stats.Location = new System.Drawing.Point(58, 313);
+            this.btn_stats.Name = "btn_stats";
+            this.btn_stats.Size = new System.Drawing.Size(223, 42);
+            this.btn_stats.TabIndex = 10;
+            this.btn_stats.Text = "İstatistikler";
+            this.btn_stats.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // btn_users
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 25);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "_________________________";
+            this.btn_users.Location = new System.Drawing.Point(58, 361);
+            this.btn_users.Name = "btn_users";
+            this.btn_users.Size = new System.Drawing.Size(223, 52);
+            this.btn_users.TabIndex = 8;
+            this.btn_users.Text = "Şifre ve Kullanıcılar";
+            this.btn_users.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // btn_process
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(214, 32);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "SQL Veri Kayıt";
+            this.btn_process.Location = new System.Drawing.Point(58, 419);
+            this.btn_process.Name = "btn_process";
+            this.btn_process.Size = new System.Drawing.Size(223, 44);
+            this.btn_process.TabIndex = 6;
+            this.btn_process.Text = "İşlemler - Hareketler";
+            this.btn_process.UseVisualStyleBackColor = true;
+            // 
+            // btn_settings
+            // 
+            this.btn_settings.Location = new System.Drawing.Point(58, 469);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.Size = new System.Drawing.Size(223, 37);
+            this.btn_settings.TabIndex = 4;
+            this.btn_settings.Text = "Ayarlar";
+            this.btn_settings.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
