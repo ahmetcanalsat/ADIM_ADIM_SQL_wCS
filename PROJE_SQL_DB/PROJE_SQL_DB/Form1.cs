@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace PROJE_SQL_DB
 {
@@ -33,6 +34,18 @@ namespace PROJE_SQL_DB
         {
             frmCustomer frm_cust = new frmCustomer();
             frm_cust.Show();
+        }
+
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-9V0QTA2\MSSQL2022;Initial Catalog=SatisVT;Integrated Security=True");
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // ÜRÜNLERİN DURUM SEVİYESİ
+            SqlCommand kritikSeviye = new SqlCommand("EXECUTE TEST4",baglanti);
+            SqlDataAdapter da=new SqlDataAdapter(kritikSeviye);
+            DataTable dt=new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            
         }
     }
 }
