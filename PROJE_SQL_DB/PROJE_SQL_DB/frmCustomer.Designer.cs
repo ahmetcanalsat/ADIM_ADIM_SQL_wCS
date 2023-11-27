@@ -38,13 +38,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_CustomerSurname = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btn_Search = new System.Windows.Forms.Button();
+            this.cmb_CustomerCity = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_CustomerWallet = new System.Windows.Forms.TextBox();
-            this.cmb_CustomerCity = new System.Windows.Forms.ComboBox();
-            this.btn_Search = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_CustomerSurname = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,7 @@
             this.btn_Update.TabIndex = 33;
             this.btn_Update.Text = "GÜNCELLE";
             this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // btn_Del
             // 
@@ -70,6 +71,7 @@
             this.btn_Del.TabIndex = 32;
             this.btn_Del.Text = "SİL";
             this.btn_Del.UseVisualStyleBackColor = true;
+            this.btn_Del.Click += new System.EventHandler(this.btn_Del_Click);
             // 
             // btn_Save
             // 
@@ -81,6 +83,7 @@
             this.btn_Save.TabIndex = 31;
             this.btn_Save.Text = "KAYDET";
             this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // btn_List
             // 
@@ -145,6 +148,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.groupBox1.Controls.Add(this.btn_Search);
             this.groupBox1.Controls.Add(this.cmb_CustomerCity);
             this.groupBox1.Controls.Add(this.btn_Update);
@@ -166,33 +170,25 @@
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             // 
-            // label3
+            // btn_Search
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 125);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 22);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Müşteri Soyad:";
+            this.btn_Search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.Location = new System.Drawing.Point(72, 349);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(201, 40);
+            this.btn_Search.TabIndex = 37;
+            this.btn_Search.Text = "ARA";
+            this.btn_Search.UseVisualStyleBackColor = true;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
-            // txt_CustomerSurname
+            // cmb_CustomerCity
             // 
-            this.txt_CustomerSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CustomerSurname.Location = new System.Drawing.Point(154, 122);
-            this.txt_CustomerSurname.Name = "txt_CustomerSurname";
-            this.txt_CustomerSurname.Size = new System.Drawing.Size(161, 28);
-            this.txt_CustomerSurname.TabIndex = 31;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(83, 177);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 22);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "Şehir:";
+            this.cmb_CustomerCity.FormattingEnabled = true;
+            this.cmb_CustomerCity.Location = new System.Drawing.Point(154, 172);
+            this.cmb_CustomerCity.Name = "cmb_CustomerCity";
+            this.cmb_CustomerCity.Size = new System.Drawing.Size(161, 33);
+            this.cmb_CustomerCity.TabIndex = 36;
             // 
             // label5
             // 
@@ -212,24 +208,33 @@
             this.txt_CustomerWallet.Size = new System.Drawing.Size(161, 28);
             this.txt_CustomerWallet.TabIndex = 35;
             // 
-            // cmb_CustomerCity
+            // label4
             // 
-            this.cmb_CustomerCity.FormattingEnabled = true;
-            this.cmb_CustomerCity.Location = new System.Drawing.Point(154, 172);
-            this.cmb_CustomerCity.Name = "cmb_CustomerCity";
-            this.cmb_CustomerCity.Size = new System.Drawing.Size(161, 33);
-            this.cmb_CustomerCity.TabIndex = 36;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(83, 177);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 22);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Şehir:";
             // 
-            // btn_Search
+            // label3
             // 
-            this.btn_Search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Search.Location = new System.Drawing.Point(72, 349);
-            this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(201, 40);
-            this.btn_Search.TabIndex = 37;
-            this.btn_Search.Text = "ARA";
-            this.btn_Search.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(11, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(129, 22);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Müşteri Soyad:";
+            // 
+            // txt_CustomerSurname
+            // 
+            this.txt_CustomerSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_CustomerSurname.Location = new System.Drawing.Point(154, 122);
+            this.txt_CustomerSurname.Name = "txt_CustomerSurname";
+            this.txt_CustomerSurname.Size = new System.Drawing.Size(161, 28);
+            this.txt_CustomerSurname.TabIndex = 31;
             // 
             // frmCustomer
             // 
