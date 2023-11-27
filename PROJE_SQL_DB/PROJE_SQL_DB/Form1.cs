@@ -24,9 +24,15 @@ namespace PROJE_SQL_DB
 
         private void btn_categories_Click(object sender, EventArgs e)
         {
-            frmCategories fr = new frmCategories(); // frmCategories isimli formumuzu çağırabilmek için form1 içinde fr ismiyle tanımladık.
-            fr.Show(); // fr isimli değişkeni göstertmek için kullanılır.
+            frmCategories frm_cat = new frmCategories(); // frmCategories isimli formumuzu çağırabilmek için form1 içinde fr ismiyle tanımladık.
+            frm_cat.Show(); // fr isimli değişkeni göstertmek için kullanılır.
             
+        }
+
+        private void btn_customers_Click(object sender, EventArgs e)
+        {
+            frmCustomer frm_cust = new frmCustomer();
+            frm_cust.Show();
         }
     }
 }
