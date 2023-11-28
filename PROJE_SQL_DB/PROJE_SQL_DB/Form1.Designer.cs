@@ -32,33 +32,37 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_exit = new System.Windows.Forms.Button();
-            this.btn_products = new System.Windows.Forms.Button();
-            this.btn_customers = new System.Windows.Forms.Button();
-            this.btn_categories = new System.Windows.Forms.Button();
-            this.btn_personal = new System.Windows.Forms.Button();
-            this.btn_case = new System.Windows.Forms.Button();
-            this.btn_stats = new System.Windows.Forms.Button();
-            this.btn_users = new System.Windows.Forms.Button();
-            this.btn_process = new System.Windows.Forms.Button();
-            this.btn_settings = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_products = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.btn_customers = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btn_categories = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btn_personal = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btn_case = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btn_stats = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_users = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_process = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_settings = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -72,6 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,107 +130,6 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "_________________________";
             // 
-            // btn_exit
-            // 
-            this.btn_exit.Location = new System.Drawing.Point(58, 512);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(223, 40);
-            this.btn_exit.TabIndex = 6;
-            this.btn_exit.Text = "Çıkış";
-            this.btn_exit.UseVisualStyleBackColor = true;
-            // 
-            // btn_products
-            // 
-            this.btn_products.Location = new System.Drawing.Point(58, 97);
-            this.btn_products.Name = "btn_products";
-            this.btn_products.Size = new System.Drawing.Size(223, 40);
-            this.btn_products.TabIndex = 20;
-            this.btn_products.Text = "Ürünler";
-            this.btn_products.UseVisualStyleBackColor = true;
-            // 
-            // btn_customers
-            // 
-            this.btn_customers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_customers.Location = new System.Drawing.Point(58, 143);
-            this.btn_customers.Name = "btn_customers";
-            this.btn_customers.Size = new System.Drawing.Size(223, 35);
-            this.btn_customers.TabIndex = 18;
-            this.btn_customers.Text = "Müşteriler";
-            this.btn_customers.UseVisualStyleBackColor = true;
-            this.btn_customers.Click += new System.EventHandler(this.btn_customers_Click);
-            // 
-            // btn_categories
-            // 
-            this.btn_categories.Location = new System.Drawing.Point(58, 184);
-            this.btn_categories.Name = "btn_categories";
-            this.btn_categories.Size = new System.Drawing.Size(223, 39);
-            this.btn_categories.TabIndex = 16;
-            this.btn_categories.Text = "Kategoriler";
-            this.btn_categories.UseVisualStyleBackColor = true;
-            this.btn_categories.Click += new System.EventHandler(this.btn_categories_Click);
-            // 
-            // btn_personal
-            // 
-            this.btn_personal.Location = new System.Drawing.Point(58, 229);
-            this.btn_personal.Name = "btn_personal";
-            this.btn_personal.Size = new System.Drawing.Size(223, 37);
-            this.btn_personal.TabIndex = 14;
-            this.btn_personal.Text = "Personel";
-            this.btn_personal.UseVisualStyleBackColor = true;
-            // 
-            // btn_case
-            // 
-            this.btn_case.Location = new System.Drawing.Point(58, 272);
-            this.btn_case.Name = "btn_case";
-            this.btn_case.Size = new System.Drawing.Size(223, 35);
-            this.btn_case.TabIndex = 12;
-            this.btn_case.Text = "Kasa";
-            this.btn_case.UseVisualStyleBackColor = true;
-            // 
-            // btn_stats
-            // 
-            this.btn_stats.Location = new System.Drawing.Point(58, 313);
-            this.btn_stats.Name = "btn_stats";
-            this.btn_stats.Size = new System.Drawing.Size(223, 42);
-            this.btn_stats.TabIndex = 10;
-            this.btn_stats.Text = "İstatistikler";
-            this.btn_stats.UseVisualStyleBackColor = true;
-            // 
-            // btn_users
-            // 
-            this.btn_users.Location = new System.Drawing.Point(58, 361);
-            this.btn_users.Name = "btn_users";
-            this.btn_users.Size = new System.Drawing.Size(223, 52);
-            this.btn_users.TabIndex = 8;
-            this.btn_users.Text = "Şifre ve Kullanıcılar";
-            this.btn_users.UseVisualStyleBackColor = true;
-            // 
-            // btn_process
-            // 
-            this.btn_process.Location = new System.Drawing.Point(58, 419);
-            this.btn_process.Name = "btn_process";
-            this.btn_process.Size = new System.Drawing.Size(223, 44);
-            this.btn_process.TabIndex = 6;
-            this.btn_process.Text = "İşlemler - Hareketler";
-            this.btn_process.UseVisualStyleBackColor = true;
-            // 
-            // btn_settings
-            // 
-            this.btn_settings.Location = new System.Drawing.Point(58, 469);
-            this.btn_settings.Name = "btn_settings";
-            this.btn_settings.Size = new System.Drawing.Size(223, 37);
-            this.btn_settings.TabIndex = 4;
-            this.btn_settings.Text = "Ayarlar";
-            this.btn_settings.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel2.Location = new System.Drawing.Point(298, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(654, 22);
-            this.panel2.TabIndex = 1;
-            // 
             // pictureBox10
             // 
             this.pictureBox10.Image = global::PROJE_SQL_DB.Properties.Resources.exit_svgrepo_com;
@@ -246,6 +150,24 @@
             this.pictureBox9.TabIndex = 21;
             this.pictureBox9.TabStop = false;
             // 
+            // btn_exit
+            // 
+            this.btn_exit.Location = new System.Drawing.Point(58, 512);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(223, 40);
+            this.btn_exit.TabIndex = 6;
+            this.btn_exit.Text = "Çıkış";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            // 
+            // btn_products
+            // 
+            this.btn_products.Location = new System.Drawing.Point(58, 97);
+            this.btn_products.Name = "btn_products";
+            this.btn_products.Size = new System.Drawing.Size(223, 40);
+            this.btn_products.TabIndex = 20;
+            this.btn_products.Text = "Ürünler";
+            this.btn_products.UseVisualStyleBackColor = true;
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::PROJE_SQL_DB.Properties.Resources.customer_management_line_svgrepo_com;
@@ -255,6 +177,17 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 19;
             this.pictureBox8.TabStop = false;
+            // 
+            // btn_customers
+            // 
+            this.btn_customers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_customers.Location = new System.Drawing.Point(58, 143);
+            this.btn_customers.Name = "btn_customers";
+            this.btn_customers.Size = new System.Drawing.Size(223, 35);
+            this.btn_customers.TabIndex = 18;
+            this.btn_customers.Text = "Müşteriler";
+            this.btn_customers.UseVisualStyleBackColor = true;
+            this.btn_customers.Click += new System.EventHandler(this.btn_customers_Click);
             // 
             // pictureBox7
             // 
@@ -266,6 +199,16 @@
             this.pictureBox7.TabIndex = 17;
             this.pictureBox7.TabStop = false;
             // 
+            // btn_categories
+            // 
+            this.btn_categories.Location = new System.Drawing.Point(58, 184);
+            this.btn_categories.Name = "btn_categories";
+            this.btn_categories.Size = new System.Drawing.Size(223, 39);
+            this.btn_categories.TabIndex = 16;
+            this.btn_categories.Text = "Kategoriler";
+            this.btn_categories.UseVisualStyleBackColor = true;
+            this.btn_categories.Click += new System.EventHandler(this.btn_categories_Click);
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::PROJE_SQL_DB.Properties.Resources.personal_page_svgrepo_com;
@@ -275,6 +218,15 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 15;
             this.pictureBox6.TabStop = false;
+            // 
+            // btn_personal
+            // 
+            this.btn_personal.Location = new System.Drawing.Point(58, 229);
+            this.btn_personal.Name = "btn_personal";
+            this.btn_personal.Size = new System.Drawing.Size(223, 37);
+            this.btn_personal.TabIndex = 14;
+            this.btn_personal.Text = "Personel";
+            this.btn_personal.UseVisualStyleBackColor = true;
             // 
             // pictureBox5
             // 
@@ -286,6 +238,15 @@
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
             // 
+            // btn_case
+            // 
+            this.btn_case.Location = new System.Drawing.Point(58, 272);
+            this.btn_case.Name = "btn_case";
+            this.btn_case.Size = new System.Drawing.Size(223, 35);
+            this.btn_case.TabIndex = 12;
+            this.btn_case.Text = "Kasa";
+            this.btn_case.UseVisualStyleBackColor = true;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::PROJE_SQL_DB.Properties.Resources.stats_svgrepo_com;
@@ -295,6 +256,15 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
+            // 
+            // btn_stats
+            // 
+            this.btn_stats.Location = new System.Drawing.Point(58, 313);
+            this.btn_stats.Name = "btn_stats";
+            this.btn_stats.Size = new System.Drawing.Size(223, 42);
+            this.btn_stats.TabIndex = 10;
+            this.btn_stats.Text = "İstatistikler";
+            this.btn_stats.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -306,6 +276,15 @@
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
+            // btn_users
+            // 
+            this.btn_users.Location = new System.Drawing.Point(58, 361);
+            this.btn_users.Name = "btn_users";
+            this.btn_users.Size = new System.Drawing.Size(223, 52);
+            this.btn_users.TabIndex = 8;
+            this.btn_users.Text = "Şifre ve Kullanıcılar";
+            this.btn_users.UseVisualStyleBackColor = true;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PROJE_SQL_DB.Properties.Resources.process_svgrepo_com;
@@ -316,6 +295,15 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_process
+            // 
+            this.btn_process.Location = new System.Drawing.Point(58, 419);
+            this.btn_process.Name = "btn_process";
+            this.btn_process.Size = new System.Drawing.Size(223, 44);
+            this.btn_process.TabIndex = 6;
+            this.btn_process.Text = "İşlemler - Hareketler";
+            this.btn_process.UseVisualStyleBackColor = true;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PROJE_SQL_DB.Properties.Resources.settings_cog_svgrepo_com1;
@@ -325,6 +313,23 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
+            // 
+            // btn_settings
+            // 
+            this.btn_settings.Location = new System.Drawing.Point(58, 469);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.Size = new System.Drawing.Size(223, 37);
+            this.btn_settings.TabIndex = 4;
+            this.btn_settings.Text = "Ayarlar";
+            this.btn_settings.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.Location = new System.Drawing.Point(298, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(654, 22);
+            this.panel2.TabIndex = 1;
             // 
             // dataGridView1
             // 
@@ -361,21 +366,40 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(304, 28);
+            this.chart1.Location = new System.Drawing.Point(304, 37);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Kategoriler";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(632, 258);
+            this.chart1.Size = new System.Drawing.Size(315, 258);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
+            // 
+            // chart2
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
+            this.chart2.Location = new System.Drawing.Point(630, 37);
+            this.chart2.Name = "chart2";
+            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Şehirler";
+            this.chart2.Series.Add(series2);
+            this.chart2.Size = new System.Drawing.Size(315, 258);
+            this.chart2.TabIndex = 5;
+            this.chart2.Text = "chart2";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 574);
+            this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView1);
@@ -401,6 +425,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,6 +460,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
     }
 }
 
