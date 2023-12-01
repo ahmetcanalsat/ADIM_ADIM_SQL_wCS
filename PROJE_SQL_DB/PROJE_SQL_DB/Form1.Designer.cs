@@ -138,6 +138,7 @@
             this.btn_exit.TabIndex = 6;
             this.btn_exit.Text = "Çıkış";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // btn_products
             // 
@@ -216,6 +217,7 @@
             this.btn_process.TabIndex = 6;
             this.btn_process.Text = "İşlemler - Hareketler";
             this.btn_process.UseVisualStyleBackColor = true;
+            this.btn_process.Click += new System.EventHandler(this.btn_process_Click);
             // 
             // btn_settings
             // 
