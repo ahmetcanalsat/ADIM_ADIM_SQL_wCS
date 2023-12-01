@@ -82,5 +82,17 @@ namespace PROJE_SQL_DB
             frmProduct frm_prod = new frmProduct();
             frm_prod.Show();
         }
+
+        private void btn_personal_Click(object sender, EventArgs e)
+        {
+            frmPersonal frm_pers= new frmPersonal();
+            frm_pers.Show();
+        }
+
+        private void btn_case_Click(object sender, EventArgs e)
+        {
+            frmCase frm_case = new frmCase();
+            frm_case.Show();
+        }
     }
 }
