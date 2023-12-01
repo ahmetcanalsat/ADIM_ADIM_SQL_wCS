@@ -167,6 +167,7 @@
             this.btn_products.TabIndex = 20;
             this.btn_products.Text = "Ürünler";
             this.btn_products.UseVisualStyleBackColor = true;
+            this.btn_products.Click += new System.EventHandler(this.btn_products_Click);
             // 
             // pictureBox8
             // 

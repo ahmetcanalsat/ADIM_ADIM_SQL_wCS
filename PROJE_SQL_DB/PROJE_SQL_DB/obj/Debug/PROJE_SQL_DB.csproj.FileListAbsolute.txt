@@ -10,3 +10,4 @@ E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_D
 E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.pdb
 E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.frmCategories.resources
 E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.frmCustomer.resources
+E:\VS Projeler\ADIM_ADIM_SQL_wCS\PROJE_SQL_DB\PROJE_SQL_DB\obj\Debug\PROJE_SQL_DB.frmProduct.resources
