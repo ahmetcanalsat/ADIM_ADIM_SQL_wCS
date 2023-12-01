@@ -74,8 +74,8 @@ namespace PROJE_SQL_DB
             save_Prod.Parameters.AddWithValue("@p1", txt_ProductName.Text);
             save_Prod.Parameters.AddWithValue("@p2", txt_ProductBrand.Text);
             save_Prod.Parameters.AddWithValue("@p3", cmb_ProductCategory.Text);
-            save_Prod.Parameters.AddWithValue("@p4", txt_ProductBuyPrice.Text);
-            save_Prod.Parameters.AddWithValue("@p5", txt_ProductSellPrice.Text);
+            save_Prod.Parameters.AddWithValue("@p4", decimal.Parse(txt_ProductBuyPrice.Text));
+            save_Prod.Parameters.AddWithValue("@p5", decimal.Parse(txt_ProductSellPrice.Text));
             save_Prod.Parameters.AddWithValue("@p6", txt_ProductStock.Text);
             save_Prod.Parameters.AddWithValue("@p7", cmb_ProductStatus.Text);
             save_Prod.ExecuteNonQuery();
@@ -116,8 +116,8 @@ namespace PROJE_SQL_DB
             updt_Prod.Parameters.AddWithValue("@p1", txt_ProductName.Text);
             updt_Prod.Parameters.AddWithValue("@p2", txt_ProductBrand.Text);
             updt_Prod.Parameters.AddWithValue("@p3", cmb_ProductCategory.Text);
-            updt_Prod.Parameters.AddWithValue("@p4", txt_ProductBuyPrice.Text);
-            updt_Prod.Parameters.AddWithValue("@p5", txt_ProductSellPrice.Text);
+            updt_Prod.Parameters.AddWithValue("@p4", decimal.Parse(txt_ProductBuyPrice.Text)); 
+            updt_Prod.Parameters.AddWithValue("@p5", decimal.Parse(txt_ProductSellPrice.Text));
             updt_Prod.Parameters.AddWithValue("@p6", txt_ProductStock.Text);
             updt_Prod.Parameters.AddWithValue("@p7", cmb_ProductStatus.Text);
             updt_Prod.Parameters.AddWithValue("@p8", txt_ProductID.Text);
