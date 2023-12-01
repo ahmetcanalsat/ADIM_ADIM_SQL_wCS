@@ -94,5 +94,16 @@ namespace PROJE_SQL_DB
             frmCase frm_case = new frmCase();
             frm_case.Show();
         }
+
+        private void btn_process_Click(object sender, EventArgs e)
+        {
+            frmProcess frm_process = new frmProcess();
+            frm_process.Show();
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
