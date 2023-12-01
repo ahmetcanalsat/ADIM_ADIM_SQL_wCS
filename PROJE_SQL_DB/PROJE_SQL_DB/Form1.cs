@@ -76,5 +76,11 @@ namespace PROJE_SQL_DB
             // Yukarıdaki kod bloğumuz müşteri tablosundaki değerlere göre her şehirde kaç müşteri olduğunu grafiğe aktarır.
 
         }
+
+        private void btn_products_Click(object sender, EventArgs e)
+        {
+            frmProduct frm_prod = new frmProduct();
+            frm_prod.Show();
+        }
     }
 }
